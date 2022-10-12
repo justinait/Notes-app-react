@@ -7,7 +7,16 @@ function Note({data}) {
     return (
         <div>
             <h1>{title}</h1>
-            <p>{body}</p>
+            <ul>
+            {
+                body.map((e) => {
+                    return(
+                        <li>{e}</li>
+                    )
+                })
+            }
+            </ul>
+            
             <button>borrar nota</button>
         </div>
     )
