@@ -1,0 +1,58 @@
+body {
+    background-image: url("/public/background.webp");
+    background-size: cover;
+    height: 100vh;
+}
+
+.notesContainer {
+    width: 80vw;
+    padding: 40px;
+    -moz-column-width: 18em;
+    -webkit-column-width: 18em;
+    margin:auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.note {
+    display: inline-block;
+    padding: 1.45rem;
+    /* width: 100%; */
+    margin: 1%;
+    background-color: #fff;
+    border: solid 1px gray;
+    border-radius: 6%;
+}
+
+.noteItems {
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.item {
+    padding: 4px 0px;
+
+}
+
+.noteTitle {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 13px;
+    margin-left: 7px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1018px){
+        
+    .notesContainer {
+        -webkit-column-width: 15em;
+    }
+}
+
+@media (min-width: 1384px){
+        
+    .notesContainer {
+        -webkit-column-width: 17em;
+    }
+}

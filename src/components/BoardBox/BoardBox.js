@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { getDocs, collection } from 'firebase/firestore'
 import db from '../../firebaseConfig';
 import Note from '../Note/Note';
+import '../Note/Note.css'
 
 function BoardBox() {
   const [listNotes, setListNotes] = useState([])
@@ -29,7 +30,7 @@ function BoardBox() {
   }, [])
 
   return(
-    <div>
+    <div className='notesContainer'>
       {
         listNotes.map((e) => {
           return          <Note data={e} key={e.id} />   
