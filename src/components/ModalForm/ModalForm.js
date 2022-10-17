@@ -29,6 +29,7 @@ function ModalForm() {
     e.preventDefault();
     pushData({title, body});
     clear();
+    handleClose();
   }
 
   const pushData = async (newNote) => {
