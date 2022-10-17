@@ -32,8 +32,10 @@ function BoardBox() {
   return(
     <div className='notesContainer'>
       {
-        listNotes.map((e) => {
-          return          <Note data={e} key={e.id} />   
+        listNotes.map((e, i) => {
+          return (
+            <Note data={e} key={i} />   
+          )
         })
       }
     </div>

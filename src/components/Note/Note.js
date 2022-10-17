@@ -12,19 +12,19 @@ function Note({data}) {
     return (
         <div className='note'>
             <h1 className='noteTitle'>{title}</h1>
-            <ul className='noteItems'>
-            {
-                body.map((e) => {
+            <p>{body}</p>
+            
+            {/* {
+                body.map((e, i) => {
                     return(
-                        <div className='item'>
+                        <div className='item' key={i}>
                             <input type="checkbox"></input>
                             <label> {e} </label>
                         </div>
                         
                     )
                 })
-            }
-            </ul>
+            } */}
             
             <button className='button' onClick={() => clear(id)}>borrar</button>
         </div>
