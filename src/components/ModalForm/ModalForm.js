@@ -27,11 +27,6 @@ function ModalForm() {
 
   const handleNote = (e) => {
     e.preventDefault();
-    // setNote({
-    //   title,
-    //   body
-    // })
-    console.log(note);
     pushData({title, body});
     clear();
   }
