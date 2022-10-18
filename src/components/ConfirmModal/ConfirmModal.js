@@ -1,24 +1,21 @@
-import { deleteDoc, doc } from 'firebase/firestore';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import db from '../../firebaseConfig';
+import { CountContext } from '../../context/CountContext';
 
 function ConfirmModal({id}) {
 
-    const [show, setShow] = useState(false);
+  const {deleteNote} = useContext(CountContext)
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+  const [show, setShow] = useState(false);
 
-    const clear = () => {
-        deleteDoc(doc(db, "notes", id));
-    }
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-    const handleDelete = () => {
-        handleClose();
-        clear();
-    }
+  const handleDelete = () => {
+    handleClose();
+    deleteNote(id);
+  }
 
   return (
     <>

@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import { addDoc, collection } from 'firebase/firestore';
 import db from '../../firebaseConfig';
+import { CountContext } from '../../context/CountContext';
 
 function ModalForm() {
+
+  const {setCount, count} = useContext(CountContext);
 
   const [show, setShow] = useState(false);
   const [title, setTitle] = useState('');
@@ -30,6 +33,7 @@ function ModalForm() {
     pushData({title, body});
     clear();
     handleClose();
+    setCount(count + 1);
   }
 
   const pushData = async (newNote) => {
