@@ -48,6 +48,16 @@ body {
     text-transform: uppercase;
 }
 
+.deleteButton {
+    background: white;
+    border: black solid 1px;
+    text-align: right;
+}
+
+.trashIcon {
+    width: 20px;
+}
+
 @media (min-width: 1018px){
         
     .notesContainer {

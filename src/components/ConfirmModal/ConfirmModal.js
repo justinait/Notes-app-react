@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { CountContext } from '../../context/CountContext';
+import '../Note/Note.css'
 
 function ConfirmModal({id}) {
 
@@ -19,8 +20,8 @@ function ConfirmModal({id}) {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Eliminar
+      <Button variant="outline-dark" onClick={handleShow} className='deleteButton'>
+        <img src="/delete-svgrepo-com.svg" alt="Eliminar" className='trashIcon' />
       </Button>
 
       <Modal show={show} onHide={handleClose}>
