@@ -69,7 +69,6 @@ function ModalForm() {
                 value={body}
                 placeholder="Cuerpo de la nota"
                 onChange={(e)=> setBody(e.target.value)}
-                autoFocus
               />
           </Form.Group>
 
