@@ -43,9 +43,10 @@ function ModalForm() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        +
-      </Button>
+      <button onClick={handleShow} className='addButton'>
+        <img src="/add-svgrepo-com.svg" alt="Eliminar" className='icons'/>
+        Agregar nota
+      </button>
 
       <Modal show={show} onHide={handleClose}>
 

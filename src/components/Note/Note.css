@@ -1,10 +1,12 @@
-* {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: monospace;
 }
 
-body {
-    background-image: url("/public/background.webp");
-    background-size: cover;
+#myBody {
+    background-color: steelblue;
     height: 100vh;
 }
 
@@ -14,48 +16,44 @@ body {
     -moz-column-width: 18em;
     -webkit-column-width: 18em;
     margin:auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
 }
 
 .note {
     display: inline-block;
     padding: 1.45rem;
-    /* width: 100%; */
-    margin: 1%;
+    width: 100%;
     background-color: #fff;
     border: solid 1px gray;
     border-radius: 6%;
-}
-
-.noteItems {
-    border-radius: 20px;
-    width: 100%;
-    padding: 10px;
-}
-
-.item {
-    padding: 4px 0px;
+    margin: 1%;
 
 }
 
 .noteTitle {
-
     font-size: 1.3em;
     font-weight: bold;
     margin: 13px 0px;
     text-transform: uppercase;
 }
 
-.deleteButton {
-    background: white;
-    border: black solid 1px;
-    text-align: right;
+.icons {
+    width: 20px;
 }
 
-.trashIcon {
-    width: 20px;
+.addButton {
+    width: 17%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black
+}
+
+.addButton:hover{
+    background-color: aliceblue;
 }
 
 @media (min-width: 1018px){

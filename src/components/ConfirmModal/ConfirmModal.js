@@ -20,8 +20,8 @@ function ConfirmModal({id}) {
 
   return (
     <>
-      <Button variant="outline-dark" onClick={handleShow} className='deleteButton'>
-        <img src="/delete-svgrepo-com.svg" alt="Eliminar" className='trashIcon' />
+      <Button variant="outline-danger" onClick={handleShow}>
+        <img src="/delete-svgrepo-com.svg" alt="Eliminar"  className='icons'/>
       </Button>
 
       <Modal show={show} onHide={handleClose}>
