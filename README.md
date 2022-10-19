@@ -5,7 +5,7 @@
 
 <h2> React Notes Application </h2> 
 
-Make a simple beginner-level application in React, where the users can write or create their notes, and they can save their written notes after clicking the save button and the notes will be visible within the note boxes in our UI. Users can also delete their notes by clicking a delete icon on the notes boxes. You can make a functionality such that the users can also search their notes by typing in the search box.
+Make a simple beginner-level application in React, where the users can write or create their notes, and they can save their written notes after clicking the save button and the notes will be visible within the note boxes in our UI. Users can also delete their notes by clicking a delete icon on the notes boxes.
 
 
 # Getting Started with Create React App
