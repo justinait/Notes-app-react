@@ -2,11 +2,9 @@ import React from 'react';
 import './Note.css';
 import ConfirmModal from '../ConfirmModal/ConfirmModal';
 
-
 function Note({data}) {
 
     const {title, body, id} = data;
-
 
     return (
         <div className='note'>
