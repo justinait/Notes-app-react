@@ -9,7 +9,7 @@ function Note({data}) {
     return (
         <div className='note'>
             
-            <h1 className='noteTitle'>{title}</h1>
+            <h4 className='noteTitle'>{title}</h4>
             <p>{body}</p>
             
             <ConfirmModal id={id} />
