@@ -58,6 +58,10 @@
 
 .addButtonContainer {
     text-align: -webkit-right;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (min-width: 1018px){
