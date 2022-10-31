@@ -6,7 +6,7 @@
 }
 
 #myBody {
-    background-color: steelblue;
+    background-color: white;
     height: 100vh;
 }
 
@@ -22,11 +22,11 @@
     display: inline-block;
     padding: 1.45rem;
     width: 100%;
-    background-color: #fff;
+    background-color: #FCF4AC;
     border: solid 1px gray;
     border-radius: 6px;
     margin: 1%;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px gray;
 }
 
 .noteTitle {
