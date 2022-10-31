@@ -1,5 +1,4 @@
 import ModalForm from '../ModalForm/ModalForm'
-import './Board.css'
 import BoardBox from '../BoardBox/BoardBox'
 import React, { useContext, useEffect, useState } from 'react'
 import { getDocs, collection } from 'firebase/firestore'
@@ -41,8 +40,8 @@ function Board() {
 
   return (
     <div>
-      <ModalForm />
       <BoardBox list={listNotes} />
+      <ModalForm />
     </div>
   )
 }
